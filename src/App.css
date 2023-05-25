@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu&family=Roboto:ital@1&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: #fff;
+  height: 100%;
+  overflow-x: hidden;
+}

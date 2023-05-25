@@ -1,0 +1,61 @@
+header.Parallax.Header{
+    background-image: url("../../assets/images/fundo-site.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh !important;
+    overflow: hidden;
+    background-attachment: fixed; 
+    background-position: center center;
+    background-position: 50% 50%;
+}
+.Title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.Header.NavList{
+    display: block;
+}
+.NavList{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    padding: 20px;
+    justify-content: end;
+    gap: 35px;
+    align-items: flex-end;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.NavList li:hover{
+    cursor: pointer;
+}
+.SectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    top: 300px;
+}
+@media(max-width:500px){
+    .Title{
+        font-size: 28px;
+    }
+    .NavList{
+        font-size: 14px;
+        justify-content: center;
+    }
+}
+.Header::after{
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+}

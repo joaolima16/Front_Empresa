@@ -1,0 +1,31 @@
+.Image{
+    width: 200px;
+    height: 150px;
+}
+
+.About {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 40px;
+    width: 100%;
+    margin: 0 auto;
+    top: 40px;
+    gap: 35px;
+    align-items: center;
+}
+.HistorySubtitle{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.History {
+    font-family: "Roboto", sans-serif;
+    line-height: 130%;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 1.2rem;
+
+}
+
