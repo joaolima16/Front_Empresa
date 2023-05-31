@@ -7,11 +7,10 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 40px;
+    padding: 35px;
     width: 100%;
     margin: 0 auto;
     top: 40px;
-    gap: 35px;
     align-items: center;
 }
 .HistorySubtitle{

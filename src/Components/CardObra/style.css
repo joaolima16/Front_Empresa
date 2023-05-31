@@ -1,0 +1,7 @@
+.CardWrapper{
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.TitleCard{
+    font-weight: bold;
+}
