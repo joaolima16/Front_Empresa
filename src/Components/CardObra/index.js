@@ -1,6 +1,7 @@
 import { Card, CardMedia, CardContent, Typography, CardActions, Button } from "@mui/material";
 import React from "react";
 import './style.css'
+import ModalContent from "../Modal";
 export default function ContentCard({obra, imagem, resumo,}) {
   return (
     <>
@@ -20,7 +21,7 @@ export default function ContentCard({obra, imagem, resumo,}) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Detalhes</Button>
+          <Button size="small" onClick={()=><ModalContent state={true} />}>Detalhes</Button>
           <Button size="small">Mais obras</Button>
         </CardActions>
       </Card>

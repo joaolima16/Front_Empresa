@@ -3,7 +3,7 @@ import "./style.css";
 export default function About() {
   return (
     <>
-      <section className="About">
+      <section className="About" id="sobre">
         <main className="HistoryCompany">
           <h3 className="HistorySubtitle">
             A KMG CONSTRUTORA é uma empresa que atua na área de construção civil

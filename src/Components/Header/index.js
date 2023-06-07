@@ -1,16 +1,21 @@
 import React from "react";
-import './style.css'
+import "./style.css";
+import image from "../../assets/images/logo.png";
 export default function Header() {
   return (
     <header className=" Parallax Header">
       <section className="SectionTitle">
-        <h1 className="Title"> KMG CONSTRUTORA EIRELI </h1>
+        <img className="logo" src={image} />
+        <h1 className="Title">CONSTRUTORA LTDA </h1>
       </section>
 
       <nav className="NavList">
-        <li className="NavLink"> Sobre</li>
-        <li className="NavLink"> Obras</li>
-        <li className="NavLink">Serviços</li>
+        <a href="#sobre" className="link">
+          <li className="NavLink"> Sobre</li>
+        </a>
+        <a href="#obras" className="link">
+          <li className="NavLink"> Obras</li>
+        </a>
         <li className="NavLink">Contato</li>
       </nav>
     </header>
