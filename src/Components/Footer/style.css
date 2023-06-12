@@ -2,4 +2,33 @@
     background-color: #1C1B1B;
     width: 100%;
     height: 50vh;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 80px;
+    font-family: "Roboto", sans-serif;
+}
+.mapa{
+ width: 40vw;
+ height: 30vh;   
+}
+.icon{
+    width: 50px;
+    height: 50px;
+}
+.titleIcons{
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    padding: 5px;
+}
+.section-icons{
+    padding: 15px;
+}
+.iconContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
