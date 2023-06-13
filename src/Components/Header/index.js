@@ -16,7 +16,10 @@ export default function Header() {
         <a href="#obras" className="link">
           <li className="NavLink"> Obras</li>
         </a>
-        <li className="NavLink">Contato</li>
+        <a>
+          <li className="NavLink">Contato</li>
+        </a>
+
       </nav>
     </header>
   );
