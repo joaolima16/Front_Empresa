@@ -72,7 +72,7 @@ a{
     }
     .NavList{
         font-size: 21px;
-        justify-content: center;
+        justify-content: flex-end;
         bottom: 40px;
         align-items: center;
     }
@@ -80,13 +80,16 @@ a{
         color: #333030;
     }
     .logo{
+        position: relative;
         width: 90px;
         height: 90px;
+        top: 10px;
     }
 }
 @media(max-width:400px){
     .logo{
         width: 70px;
         height: 70px;
+        top: 15px;
     }
 }
