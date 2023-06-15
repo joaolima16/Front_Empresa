@@ -4,12 +4,18 @@ import { AiFillPhone } from "react-icons/ai";
 import { MdOutlineEmail } from "react-icons/md";
 export default function Footer() {
   return (
-    <footer className="Footer">
+    <footer className="Footer" id="contato">
       <section className="section-icons">
         <h3 className="titleIcons">Contatos</h3>
         <div className="iconContainer">
-          <AiFillPhone className="icon" />
-          <MdOutlineEmail className="icon" />
+          <div className="icon_div">
+            <AiFillPhone className="icon" />
+            <p className="icon_text">(11)9999-99</p>
+          </div>
+          <div className="icon_div">
+            <MdOutlineEmail className="icon" />
+            <p className="icon_text">teste@outlook.com</p>
+          </div>
         </div>
       </section>
       <div>

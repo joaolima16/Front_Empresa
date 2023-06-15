@@ -50,27 +50,12 @@ header.Parallax.Header{
     flex-direction: row;
     color: #fff;
     position: relative;
-    top: 350px;
+    top: 300px;
     gap: 10px;
 }
 .logo{
     width:120px;
     height: 120px;
-}
-@media(max-width:500px){
-    .Title{
-        font-size: 25px;
-    }
-    .NavList{
-        font-size: 21px;
-        justify-content: center;
-        bottom: 40px;
-        color: #333030;
-    }
-    .logo{
-        width: 90px;
-        height: 90px;
-    }
 }
 .Header::after{
     width: 100%;
@@ -80,4 +65,28 @@ header.Parallax.Header{
 a{
     text-decoration: none;
     color: #fff;
+}
+@media(max-width:500px){
+    .Title{
+        font-size: 25px;
+    }
+    .NavList{
+        font-size: 21px;
+        justify-content: center;
+        bottom: 40px;
+        align-items: center;
+    }
+    .NavList a{
+        color: #333030;
+    }
+    .logo{
+        width: 90px;
+        height: 90px;
+    }
+}
+@media(max-width:400px){
+    .logo{
+        width: 70px;
+        height: 70px;
+    }
 }

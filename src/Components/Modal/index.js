@@ -9,7 +9,7 @@ export default function ModalContent({state}) {
 
       <Modal
         open={state}
-        onClose={Toogle}
+        onClose={false}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >

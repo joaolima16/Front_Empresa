@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import image from "../../assets/images/logo.png";
 export default function Header() {
+
   return (
     <header className=" Parallax Header">
       <section className="SectionTitle">
@@ -13,10 +14,13 @@ export default function Header() {
         <a href="#sobre" className="link">
           <li className="NavLink"> Sobre</li>
         </a>
-        <a href="#obras" className="link">
+        <a  href="#obras" className="link">
           <li className="NavLink"> Obras</li>
         </a>
-        <li className="NavLink">Contato</li>
+        <a href="#contato">
+          <li className="NavLink">Contato</li>
+        </a>
+
       </nav>
     </header>
   );

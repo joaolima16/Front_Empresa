@@ -1,14 +1,23 @@
 import { Card, CardMedia, CardContent, Typography, CardActions, Button } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import './style.css'
 import ModalContent from "../Modal";
 export default function ContentCard({obra, imagem, resumo,}) {
+
+  const [state,setState] = useState(false);
+  const Toggle = () =>{  
+    setState(!state)
+    return (
+        <ModalContent state={state} />
+
+    )
+  
+  };
   return (
     <>
       <Card sx={{ maxWidth: 355 }} className="CardWrapper">
         <CardMedia
           component="img"
-          alt="green iguana"
           height="170"
           image={imagem}
         />
@@ -21,7 +30,7 @@ export default function ContentCard({obra, imagem, resumo,}) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" onClick={()=><ModalContent state={true} />}>Detalhes</Button>
+          <Button size="small" onClick={()=> Toggle() }>Detalhes</Button>
           <Button size="small">Mais obras</Button>
         </CardActions>
       </Card>
