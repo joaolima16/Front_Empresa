@@ -1,0 +1,49 @@
+.ContainerService{
+    position: relative;
+    top: 20px;
+    padding: 15px;
+}
+
+.TitleServices{
+    text-align: center;
+    font-size: 37px;
+    font-family: "Gugi", sans-serif;
+    font-weight: bold;
+}
+.WrapperContent{
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.Image_Icons{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.WrapperIcons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.Content{
+    font-size: 21px;
+    font-family: "Gugi", sans-serif;
+}
+@media(max-width:500px){
+    .Content{
+        font-size: 15px;
+
+    }
+    .Image_Icons{
+        width: 150px;
+        height: 150px;
+    }
+    .WrapperIcons{
+        gap: 15px;
+        justify-content: center;
+    }
+}

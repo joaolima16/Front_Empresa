@@ -15,7 +15,7 @@
     "react-icons": "^4.9.0",
     "react-multi-carousel": "^2.8.4",
     "react-router": "^6.12.1",
-    "react-router-dom": "^6.12.1",
+    "react-router-dom": "^6.13.0",
     "react-scripts": "5.0.1",
     "reactstrap": "^9.1.10",
     "web-vitals": "^2.1.4"

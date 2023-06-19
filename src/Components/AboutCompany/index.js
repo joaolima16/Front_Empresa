@@ -5,7 +5,6 @@ export default function About() {
   return (
     <>
 
-    <h1 className="TitleAbout">Sobre A KMG CONSTRUTORA</h1>
     <section className="Wrapper">
     <div className="AboutHistory">
     <p className="History">
