@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes,Route } from "react-router-dom";
 import Home from "../Pages/Home/Index";
-import ObrasPage from "../Pages/Obras";
+import ObrasPage from "../Pages/Obra";
+import ListObrasPage from "../Pages/ListObras";
 
 export default function RoutesPage() {
   return (
@@ -9,6 +10,7 @@ export default function RoutesPage() {
       <Routes>
         <Route element={<Home />} path="/" />
         <Route element={<ObrasPage />} path="/obra" />
+        <Route element={<ListObrasPage />} path="/obras" />
     
       </Routes>
     </BrowserRouter>

@@ -4,7 +4,7 @@ import { AiFillPhone } from "react-icons/ai";
 import { MdOutlineEmail } from "react-icons/md";
 export default function Footer() {
   return (
-    <footer className="Footer" id="contato">
+    <footer className="Footer" id="contact">
       <section className="section-icons">
         <h3 className="titleIcons">Contatos</h3>
         <div className="iconContainer">

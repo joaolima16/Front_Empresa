@@ -62,7 +62,7 @@ header.Parallax.Header{
     height: 100%;
     z-index: 8;
 }
-a{
+.NavList a{
     text-decoration: none;
     color: #fff;
 }

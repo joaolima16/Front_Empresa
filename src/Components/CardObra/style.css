@@ -5,3 +5,7 @@
 .TitleCard{
     font-weight: bold;
 }
+.link_page{
+    text-decoration: none;
+    color: #1976d2;
+}
