@@ -4,13 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body,html{
   word-wrap: break-word;
   overflow-wrap: break-word;
-  background-color: #fff;
+  background: rgb(193,193,193);
+  background: linear-gradient(90deg, rgba(193,193,193,1) 0%, rgba(226,223,223,1) 10%, rgba(242,242,242,1) 100%);
   height: 100%;
   overflow-x: hidden;
-}
-html{
   scroll-behavior: smooth;
 }
