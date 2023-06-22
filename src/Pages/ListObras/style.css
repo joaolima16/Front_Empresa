@@ -11,17 +11,21 @@
 .Container_List{
     position: relative;
     top: 70px;
-    margin: 13px;
+    margin: 0 auto;
 }
 .Image{
     width: 400px;
     height: auto;
+    
+}
+.teste{
+    padding: 20px;
 }
 .Image:hover{
     cursor: pointer;
     transition: 1s;
     width: 420px;
-    box-shadow: 6px 6px 8px 8px #0000009f;
+    box-shadow:  6px 6px 8px 8px  #0000009f;
 }
 .Title_Header{
     color: #fff;

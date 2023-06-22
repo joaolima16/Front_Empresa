@@ -13,25 +13,54 @@
 .WrapperContent{
     padding: 35px;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    gap:45px;
 }
 .Image_Icons{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: 3px solid black;
+    
 }
 .WrapperIcons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 130%;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 400 ;
+    gap: 15px;
+}
+.WrapperIcons p{
+    font-weight: 500;
+}
+.WrapperIcons_sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.WrapperIcons_main {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
+  
+}
+.WrapperIcons_main p{
+    font-weight: bold;
+    font-size: 27px;
 }
 .Content{
-    font-size: 21px;
-    font-family: "Gugi", sans-serif;
+    font-size: 19px;
+    font-family: "Roboto", sans-serif;
 }
 @media(max-width:500px){
     .Content{

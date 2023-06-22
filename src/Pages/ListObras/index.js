@@ -7,11 +7,16 @@ import "./style.css";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
+import Footer from "../../Components/Footer";
+import ButtonSwap from "../../Components/ButtonSwap";
 
 export default function ListObrasPage() {
   const itemData = [
     { img: teste, title: "teste1" },
     { img: teste2, title: "teste2" },
+    { img: teste3, title: "teste13" },
+    { img: teste3, title: "teste13" },
+    { img: teste3, title: "teste13" },
     { img: teste3, title: "teste13" },
   ];
   return (
@@ -23,65 +28,74 @@ export default function ListObrasPage() {
         <h3 className="Title_Header">Portfólio de Obras</h3>
       </header>
       <section className="Container_List">
-        <Carousel
-          additionalTransfrom={0}
-          arrows
-          autoPlay
-          autoPlaySpeed={2000}
-          centerMode={false}
-          className=""
-          containerClass="container-with-dots"
-          dotListClass=""
-          draggable
-          focusOnSelect={false}
-          infinite
-          itemClass=""
-          keyBoardControl
-          minimumTouchDrag={80}
-          pauseOnHover
-          renderArrowsWhenDisabled={false}
-          renderButtonGroupOutside={false}
-          renderDotsOutside={false}
-          responsive={{
-            desktop: {
-              breakpoint: {
-                max: 3000,
-                min: 1024,
-              },
-              items: 3,
-              partialVisibilityGutter: 40,
-            },
-            mobile: {
-              breakpoint: {
-                max: 464,
-                min: 0,
-              },
-              items: 1,
-              partialVisibilityGutter: 30,
-            },
-            tablet: {
-              breakpoint: {
-                max: 1024,
-                min: 464,
-              },
-              items: 2,
-              partialVisibilityGutter: 30,
-            },
+        <div
+          style={{
+            position: "relative",
           }}
-          rewind={false}
-          rewindWithAnimation={false}
-          rtl={false}
-          shouldResetAutoplay
-          showDots={false}
-          sliderClass=""
-          slidesToSlide={2}
-          swipeable
         >
-          {itemData.map((index) => {
-            return <img src={index.img} className="Image" />;
-          })}
-        </Carousel>
+          <Carousel
+            additionalTransfrom={0}
+            arrows={false}
+            autoPlaySpeed={1000}
+            centerMode={false}
+            className="teste"
+            containerClass="container-padding-bottom"
+            dotListClass=""
+            draggable
+            focusOnSelect
+            infinite
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={80}
+            pauseOnHover
+            renderArrowsWhenDisabled={true}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            responsive={{
+              desktop: {
+                breakpoint: {
+                  max: 3000,
+                  min: 1024,
+                },
+                items: 3,
+                partialVisibilityGutter: 40,
+              },
+              mobile: {
+                breakpoint: {
+                  max: 464,
+                  min: 0,
+                },
+                items: 1,
+                partialVisibilityGutter: 30,
+              },
+              tablet: {
+                breakpoint: {
+                  max: 1024,
+                  min: 464,
+                },
+                items: 2,
+                partialVisibilityGutter: 30,
+              },
+            }}
+            rewind={false}
+            rewindWithAnimation={false}
+            rtl={false}
+            shouldResetAutoplay
+            showDots
+            sliderClass=""
+            slidesToSlide={1}
+            swipeable
+          >
+           {itemData.map((index)=>{
+            return(
+                <img src={index.img} className="Image"/>
+            )
+           })}
+          </Carousel>
+        </div>
+       
       </section>
+      <Footer />
     </>
   );
 }
