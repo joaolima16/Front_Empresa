@@ -5,11 +5,9 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { Link, To, redirect } from "react-router-dom";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import logo from "../../assets/images/logo.png";
+import Footer from "../../Components/Footer";
 export default function ObrasPage() {
-  const RedirectPage = () => {
-    console.log("test");
-    return redirect("/home");
-  };
+  
   return (
     <>
       <header className="Header_Obra">
@@ -22,7 +20,7 @@ export default function ObrasPage() {
         </Link>
       <section className="Container_Obra">
        
-        <div className="Image">
+        <div className="Image_Obra">
           <img src={image} />
         </div>
         <div className="Container_Informations">
@@ -37,6 +35,7 @@ export default function ObrasPage() {
           <h3 className="Subtitle_Obra">Contratante: SABESP</h3>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

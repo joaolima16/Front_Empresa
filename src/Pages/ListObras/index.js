@@ -8,7 +8,6 @@ import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import Footer from "../../Components/Footer";
-import ButtonSwap from "../../Components/ButtonSwap";
 
 export default function ListObrasPage() {
   const itemData = [
@@ -38,7 +37,7 @@ export default function ListObrasPage() {
             arrows={false}
             autoPlaySpeed={1000}
             centerMode={false}
-            className="teste"
+            className="Carrosel_Container"
             containerClass="container-padding-bottom"
             dotListClass=""
             draggable
@@ -62,11 +61,11 @@ export default function ListObrasPage() {
               },
               mobile: {
                 breakpoint: {
-                  max: 464,
+                  max: 350,
                   min: 0,
                 },
                 items: 1,
-                partialVisibilityGutter: 30,
+                partialVisibilityGutter: 6,
               },
               tablet: {
                 breakpoint: {

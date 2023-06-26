@@ -71,8 +71,8 @@ header.Parallax.Header{
         font-size: 25px;
     }
     .NavList{
-        font-size: 21px;
-        justify-content: flex-end;
+        font-size: 18px;
+        justify-content: center;
         bottom: 40px;
         align-items: center;
     }

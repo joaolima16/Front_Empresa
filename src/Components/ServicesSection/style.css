@@ -36,6 +36,7 @@
     font-size: 1.2rem;
     font-weight: 400 ;
     gap: 15px;
+ 
 }
 .WrapperIcons p{
     font-weight: 500;
@@ -74,5 +75,14 @@
     .WrapperIcons{
         gap: 15px;
         justify-content: center;
+        flex-wrap: wrap;
+        line-height: 90%;
+        letter-spacing: 0.2px;
+    }
+    .WrapperIcons_main p{
+        font-size: 21px;
+    }
+    .WrapperIcons_sub{
+        flex-wrap: wrap;
     }
 }
