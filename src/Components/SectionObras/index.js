@@ -3,7 +3,7 @@ import "./style.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import image from "../../assets/images/Obra.PNG";
-import ContentCard from "../CardObra";
+import ContentCard from "../CardObra/CardObra";
 export default function SectionObras() {
   const responsive = {
     superLargeDesktop: {

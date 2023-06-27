@@ -7,7 +7,7 @@ import "./style.css";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
-import Footer from "../../Components/Footer";
+import Footer from "../../Components/Footer/Footer";
 
 export default function ListObrasPage() {
   const itemData = [
@@ -27,71 +27,67 @@ export default function ListObrasPage() {
         <h3 className="Title_Header">Portfólio de Obras</h3>
       </header>
       <section className="Container_List">
-        <div
-          style={{
-            position: "relative",
-          }}
-        >
-          <Carousel
-            additionalTransfrom={0}
-            arrows={false}
-            autoPlaySpeed={1000}
-            centerMode={false}
-            className="Carrosel_Container"
-            containerClass="container-padding-bottom"
-            dotListClass=""
-            draggable
-            focusOnSelect
-            infinite
-            itemClass=""
-            keyBoardControl
-            minimumTouchDrag={80}
-            pauseOnHover
-            renderArrowsWhenDisabled={true}
-            renderButtonGroupOutside={false}
-            renderDotsOutside={false}
-            responsive={{
-              desktop: {
-                breakpoint: {
-                  max: 3000,
-                  min: 1024,
-                },
-                items: 3,
-                partialVisibilityGutter: 40,
-              },
-              mobile: {
-                breakpoint: {
-                  max: 350,
-                  min: 0,
-                },
-                items: 1,
-                partialVisibilityGutter: 6,
-              },
-              tablet: {
-                breakpoint: {
-                  max: 1024,
-                  min: 464,
-                },
-                items: 2,
-                partialVisibilityGutter: 30,
-              },
-            }}
-            rewind={false}
-            rewindWithAnimation={false}
-            rtl={false}
-            shouldResetAutoplay
-            showDots
-            sliderClass=""
-            slidesToSlide={1}
-            swipeable
-          >
-           {itemData.map((index)=>{
+      <Carousel
+  additionalTransfrom={0}
+  arrows
+  autoPlay
+  autoPlaySpeed={2000}
+  centerMode={false}
+  className="Container_Carrosel"
+  containerClass="container-with-dots"
+  dotListClass=""
+  draggable
+  focusOnSelect={false}
+  infinite
+  itemClass=""
+  keyBoardControl
+  minimumTouchDrag={80}
+  pauseOnHover
+  renderArrowsWhenDisabled={false}
+  renderButtonGroupOutside={false}
+  renderDotsOutside={false}
+  responsive={{
+    desktop: {
+      breakpoint: {
+        max: 3000,
+        min: 1024
+      },
+      items: 3,
+      partialVisibilityGutter: 40
+    },
+    mobile: {
+      breakpoint: {
+        max: 450,
+        min: 0
+      },
+      items: 1,
+      partialVisibilityGutter: 0
+    },
+    tablet: {
+      breakpoint: {
+        max: 1024,
+        min: 464
+      },
+      items: 2,
+      partialVisibilityGutter: 30
+    }
+  }}
+  rewind={false}
+  rewindWithAnimation={false}
+  rtl={false}
+  shouldResetAutoplay
+  showDots={false}
+  sliderClass=""
+  slidesToSlide={2}
+  swipeable
+>
+           {itemData.map(({img})=>{
             return(
-                <img src={index.img} className="Image"/>
+                <img src={img} className="Image_Obras"/>
             )
            })}
           </Carousel>
-        </div>
+   
        
       </section>
       <Footer />

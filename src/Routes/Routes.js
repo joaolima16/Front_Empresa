@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes,Route } from "react-router-dom";
 import Home from "../Pages/Home/Index";
-import ObrasPage from "../Pages/Obra";
+import ObrasPage from "../Pages/Obra/Obra";
 import ListObrasPage from "../Pages/ListObras";
 
 export default function RoutesPage() {

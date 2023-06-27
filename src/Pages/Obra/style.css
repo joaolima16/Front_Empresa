@@ -3,7 +3,17 @@
     height: 70px;
     background: rgb(28,27,29);
     background: linear-gradient(90deg, rgba(28,27,29,1) 0%, rgba(36,36,40,1) 100%, rgba(205,212,213,1) 100%);
-
+    display:  flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.Content_Header{
+    color: #fff;
+    margin: 15px;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
 }
 .Logo_Obra{
     width: 50px;
@@ -55,13 +65,36 @@
 }
 .Section_Obras{
     position: relative;
-    top:150px;
+    top:100px;
     width: 100%;
+    margin:  0 auto;
 }
 .ListImages{
     width: 350px;
     height:250px;
+    padding: 15px;
 }
 .col{
     padding: 10px;
+}
+.container{
+    margin: 0 auto
+}
+@media(max-width: 700px){
+    .Image_Obra{
+        margin: 0 auto;
+    }
+    .Image_Obra img{
+        width: 300px;
+        height: 200px;
+    }
+    .Container_Obra{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Content_Obra{
+        letter-spacing: 0.2px;
+    }
+    
 }
