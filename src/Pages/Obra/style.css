@@ -6,10 +6,9 @@
 
 }
 .Logo_Obra{
-
-    width: 60px;
-    height: 60px;
-    margin: 5px;
+    width: 50px;
+    height: 50px;
+    margin:15px;
 }
 .Icon_Back{
     margin: 15px;
@@ -24,6 +23,7 @@
     justify-content: center;
     padding: 15px;
     gap: 20px;
+   
 }
 .Image_Obra img{
     width: 500px;
@@ -34,6 +34,7 @@
     font-size: 32px;
     font-family: "Roboto", sans-serif;
     border-bottom: 2.5px solid #000;
+    font-weight: bold;
 }
 .Container_Informations{
     padding: 10px;
@@ -51,4 +52,16 @@
 .Subtitle_Obra{
     font-size: 24px;
     font-weight: 600;
+}
+.Section_Obras{
+    position: relative;
+    top:150px;
+    width: 100%;
+}
+.ListImages{
+    width: 350px;
+    height:250px;
+}
+.col{
+    padding: 10px;
 }

@@ -7,7 +7,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import logo from "../../assets/images/logo.png";
 import Footer from "../../Components/Footer";
 export default function ObrasPage() {
-  
+
   return (
     <>
       <header className="Header_Obra">
@@ -16,10 +16,10 @@ export default function ObrasPage() {
         </Link>
       </header>
       <Link to="/" className="Link_Page_Obra">
-          <IoArrowBackCircleOutline className="Icon_Back"/>
-        </Link>
+        <IoArrowBackCircleOutline className="Icon_Back" />
+      </Link>
       <section className="Container_Obra">
-       
+
         <div className="Image_Obra">
           <img src={image} />
         </div>
@@ -35,6 +35,34 @@ export default function ObrasPage() {
           <h3 className="Subtitle_Obra">Contratante: SABESP</h3>
         </div>
       </section>
+      <section className="Section_Obras">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col">
+              <img src={image} className="ListImages" />
+            </div>
+            <div class="col">
+              <img src={image} className="ListImages" />
+            </div>
+            <div class="col">
+              <img src={image} className="ListImages" />
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <img src={image} className="ListImages" />
+            </div>
+            <div class="col">
+              <img src={image} className="ListImages" />
+            </div>
+            <div class="col">
+              <img src={image} className="ListImages" />
+            </div>
+          </div>
+        </div>
+
+      </section>
+
       <Footer />
     </>
   );
