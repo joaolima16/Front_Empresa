@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import image from "../../assets/images/Obra.PNG";
 import ContentCard from "../CardObra/CardObra";
+import testeImage from "../../assets/images/obra3.PNG";
 export default function SectionObras() {
   const responsive = {
     superLargeDesktop: {
@@ -23,56 +24,43 @@ export default function SectionObras() {
       items: 1,
     },
   };
+  const dataCards = [
+    {
+      obra: "São Vicente",
+      resumo:
+        "Execução de Redes Coletoras, Coletores Tronco, Ligações Domiciliares, Linhas de Recalque e Estações Elevatórias de Esgotos de São Vicente – 2ª Etapa do Programa Onda Limpa – Lote 3 – Em  execução.",
+      imagem: image,
+    },
+    {
+      obra: "ETE Polvilho",
+      resumo:
+        "Execução de Redes Coletoras, Coletores Tronco, Ligações Domiciliares, Linhas de Recalque e Estações Elevatórias de Esgotos de São Vicente – 2ª Etapa do Programa Onda Limpa – Lote 3 – Em  execução.",
+      imagem: testeImage,
+    },
+    {
+      obra: "ETE Polvilho",
+      resumo:
+        "Execução de Redes Coletoras, Coletores Tronco, Ligações Domiciliares, Linhas de Recalque e Estações Elevatórias de Esgotos de São Vicente – 2ª Etapa do Programa Onda Limpa – Lote 3 – Em  execução.",
+      imagem: testeImage,
+    },
+  ];
   return (
     <>
-     
-          
       <section className="parallax"> </section>
       <div className="Container">
-        <h1 className="TitleObra" id="obras">Principais Obras</h1>
+        <h1 className="TitleObra" id="obras">
+          Principais Obras
+        </h1>
         <Carousel responsive={responsive}>
-          <div>
-            <ContentCard
-              obra="São Vicente"
-              resumo="Execução de Redes Coletoras, Coletores Tronco, Ligações Domiciliares, Linhas de Recalque e Estações Elevatórias de Esgotos de São Vicente
-             – 2ª Etapa do Programa Onda Limpa – Lote 3 – Em  execução."
-              imagem={image}
-            />
-          </div>
-          <div>
-            <ContentCard
-              obra="ETE Polvilho"
-              resumo="Execução de Redes Coletoras, Coletores Tronco, Ligações Domiciliares, Linhas de Recalque e Estações Elevatórias de Esgotos de São Vicente
-             – 2ª Etapa do Programa Onda Limpa – Lote 3 – Em  execução."
-              imagem={image}
-            />
-          </div>
-          <div>
-            <ContentCard
-              obra="São Vicente"
-              resumo="Execução de Redes Coletoras, Coletores Tronco, Ligações Domiciliares, Linhas de Recalque e Estações Elevatórias de Esgotos de São Vicente
-             – 2ª Etapa do Programa Onda Limpa – Lote 3 – Em  execução."
-              imagem={image}
-            />
-          </div>
-          <div>
-            <ContentCard
-              obra="São Vicente"
-              resumo="Execução de Redes Coletoras, Coletores Tronco, Ligações Domiciliares, Linhas de Recalque e Estações Elevatórias de Esgotos de São Vicente
-             – 2ª Etapa do Programa Onda Limpa – Lote 3 – Em  execução."
-              imagem={image}
-            />
-          </div>
-          <div>
-            <ContentCard
-              obra="São Vicente"
-              resumo="Execução de Redes Coletoras, Coletores Tronco, Ligações Domiciliares, Linhas de Recalque e Estações Elevatórias de Esgotos de São Vicente
-             – 2ª Etapa do Programa Onda Limpa – Lote 3 – Em  execução."
-              imagem={image}
-            />
-          </div>
+          {dataCards.map(({ obra, resumo, imagem }) => {
+            return (
+              <div>
+                <ContentCard obra={obra} resumo={resumo} imagem={imagem} />
+              </div>
+            );
+          })}
         </Carousel>
-      </div> 
+      </div>
     </>
   );
 }

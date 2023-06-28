@@ -14,7 +14,7 @@
     margin: 0 auto;
 }
 .Image_Obras{
-    width: 300px;
+    width: 330px;
     height: auto;
     position: relative;
     left: 60px;
@@ -22,10 +22,10 @@
 .Carrosel_Container{
     padding: 30px;
 }
-.Image:hover{
+.Image_Obras:hover{
     cursor: pointer;
     transition: 1s;
-    width: 420px;
+    width: 360px;
     box-shadow:  6px 6px 8px 8px  #0000009f;
 }
 .Title_Header{
@@ -42,7 +42,10 @@
 }
 .Container_Carrosel{
     margin: 0 auto;
-    padding: 20px;
+
+}
+.Container_Carrosel button{
+
 }
 @media(max-width:500px){
     .Image_Obras{
