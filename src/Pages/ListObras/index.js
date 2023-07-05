@@ -87,8 +87,6 @@ export default function ListObrasPage() {
             )
            })}
           </Carousel>
-   
-       
       </section>
       <Footer />
     </>

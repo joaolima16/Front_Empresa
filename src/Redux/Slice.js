@@ -5,12 +5,14 @@ export const slice = createSlice({
     initialState: {
         obra: '',
         resumo: '',
+        contrato: '',
+        contratante: '',
         images: [],
         status: ''
     },
     reducers:{
         changeConstruction(state, {payload}) {
-            return {...state, obra: payload[0], summary: payload[2],}
+            return {initialState: payload}
         }
     }
 })

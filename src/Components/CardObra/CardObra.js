@@ -5,14 +5,17 @@ import './style.css'
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { changeConstruction } from "../../Redux/Slice";
-export default function ContentCard({obra, imagem, resumo,}) {
+export default function ContentCard({obra, imagem, resumo,contrato,contratante, id,status}) {
   const dispatch = useDispatch();
-  const status = "finalizada"
   const Toggle = async() =>{
     const state =  [
       obra,
       imagem,
-      resumo
+      resumo,
+      contrato,
+      contratante,
+      id,
+      status
     ]
     dispatch(changeConstruction(state))
 
@@ -23,8 +26,8 @@ export default function ContentCard({obra, imagem, resumo,}) {
       <Card sx={{ maxWidth: 355 }} className="CardWrapper">
         <CardMedia
           component="img"
-          height="auto"
-          image={imagem}
+          height="250px"
+          image={`http://localhost:3333/files/${imagem}`}
         />
         <CardContent>
           <Typography gutterBottom variant="h4" component="section" className="TitleCard">

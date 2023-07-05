@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import image from "../../assets/images/Obra.PNG";
 import ContentCard from "../CardObra/CardObra";
 import testeImage from "../../assets/images/obra3.PNG";
+import axios from "axios";
 export default function SectionObras() {
+  const [Content, SetContent] = useState([]);
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -24,26 +26,21 @@ export default function SectionObras() {
       items: 1,
     },
   };
-  const dataCards = [
-    {
-      obra: "São Vicente",
-      resumo:
-        "Execução de Redes Coletoras, Coletores Tronco, Ligações Domiciliares, Linhas de Recalque e Estações Elevatórias de Esgotos de São Vicente – 2ª Etapa do Programa Onda Limpa – Lote 3 – Em  execução.",
-      imagem: image,
-    },
-    {
-      obra: "ETE Polvilho",
-      resumo:
-        "Execução de Redes Coletoras, Coletores Tronco, Ligações Domiciliares, Linhas de Recalque e Estações Elevatórias de Esgotos de São Vicente – 2ª Etapa do Programa Onda Limpa – Lote 3 – Em  execução.",
-      imagem: testeImage,
-    },
-    {
-      obra: "ETE Polvilho",
-      resumo:
-        "Execução de Redes Coletoras, Coletores Tronco, Ligações Domiciliares, Linhas de Recalque e Estações Elevatórias de Esgotos de São Vicente – 2ª Etapa do Programa Onda Limpa – Lote 3 – Em  execução.",
-      imagem: testeImage,
-    },
-  ];
+  const FecthData = async () => {
+    await axios
+      .get(`http://localhost:3333/obra`)
+      .then(({ data }) => {
+        SetContent(data);
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    FecthData();
+  }, []);
   return (
     <>
       <section className="parallax"> </section>
@@ -52,13 +49,21 @@ export default function SectionObras() {
           Principais Obras
         </h1>
         <Carousel responsive={responsive}>
-          {dataCards.map(({ obra, resumo, imagem }) => {
-            return (
-              <div>
-                <ContentCard obra={obra} resumo={resumo} imagem={imagem} />
-              </div>
-            );
-          })}
+          {Content.map(
+            ({ obra, resumo, images, contrato, contratante, id, status}) => {
+              return (
+                <ContentCard
+                  obra={obra}
+                  resumo={resumo}
+                  imagem={images[0]?.imageUrl}
+                  contrato={contrato}
+                  contratante={contratante}
+                  id={id}
+                  status={status}
+                />
+              );
+            }
+          )}
         </Carousel>
       </div>
     </>
