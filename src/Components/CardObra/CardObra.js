@@ -23,7 +23,7 @@ export default function ContentCard({obra, imagem, resumo,contrato,contratante, 
   
   return (
     <>
-      <Card sx={{ maxWidth: 355 }} className="CardWrapper">
+      <Card sx={{ maxWidth: 355,}} className="CardWrapper">
         <CardMedia
           component="img"
           height="250px"

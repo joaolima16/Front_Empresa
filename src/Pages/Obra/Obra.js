@@ -3,25 +3,27 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
-import teste from "../../assets/images/Imagem1.jpg";
-import teste2 from "../../assets/images/Imagem2.jpg";
-import teste3 from "../../assets/images/Imagem3.jpg";
-import image from "../../assets/images/Obra.PNG";
 import logo from "../../assets/images/logo.png";
 import "./style.css";
 import axios from "axios";
+
 export default function ObrasPage() {
   const State = useSelector((state) => state?.sliceReducer.initialState);
   const [DataImage, SetDataImage] = useState([]);
-  useEffect(() => {
+
+  const FecthData = () => {
     axios
       .get(`http://localhost:3333/obra/images/${State[5]}`)
-      .then((response) => {
-        SetDataImage(response.data)
+      .then(({data}) => {
+        SetDataImage(data);
       })
       .catch((err) => {
         console.log(err);
       });
+  };
+  useEffect(() => {
+    FecthData();
+
   }, []);
 
   return (
@@ -55,11 +57,14 @@ export default function ObrasPage() {
         <div class="container">
           <div class="row align-items-start">
             <div class="col">
-            {DataImage.map(({imageUrl})=>{
-              return(
-                <img src={`http://localhost:3333/files/${imageUrl}`} className="ListImages" />
-              )
-            })}
+              {DataImage.map(({ imageUrl }) => {
+                return (
+                  <img
+                    src={`http://localhost:3333/files/${imageUrl}`}
+                    className="ListImages"
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
