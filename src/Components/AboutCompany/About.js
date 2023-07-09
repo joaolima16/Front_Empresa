@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import logo from "../../assets/images/logo.png";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 export default function About() {
   return (
     <>

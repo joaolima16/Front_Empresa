@@ -17,6 +17,7 @@ export default function ListObrasPage() {
       .get("http://localhost:3333/obra")
       .then(({ data }) => {
         SetData(data);
+        console.log(data)
       })
       .catch((err) => {
         console.log(err);
@@ -98,9 +99,10 @@ export default function ListObrasPage() {
           slidesToSlide={2}
           swipeable
         >
+        
           {Data.map(({ images }) => {
             return (
-              <Link to="/obras">
+              <Link to="/obra">
                 <img
                   src={`http://localhost:3333/files/${images[0].imageUrl}`}
                   className="Image_Obras"
