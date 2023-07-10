@@ -9,15 +9,18 @@ import { Link } from "react-router-dom";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import Footer from "../../Components/Footer/Footer";
 import axios from "axios";
+import { useDispatch } from "react-redux";
+import { changeConstruction } from "../../Redux/Slice";
 
 export default function ListObrasPage() {
   const [Data, SetData] = useState([]);
+  const dispatch = useDispatch();
   const FecthDatas = async () => {
     await axios
       .get("http://localhost:3333/obra")
       .then(({ data }) => {
         SetData(data);
-        console.log(data)
+        console.log(data);
       })
       .catch((err) => {
         console.log(err);
@@ -99,12 +102,16 @@ export default function ListObrasPage() {
           slidesToSlide={2}
           swipeable
         >
-        
-          {Data.map(({ images }) => {
+          {Data.map((index) => {
             return (
-              <Link to="/obra">
+              <Link
+                to="/obra"
+                onClick={() => {
+                  dispatch(changeConstruction(index));
+                }}
+              >
                 <img
-                  src={`http://localhost:3333/files/${images[0].imageUrl}`}
+                  src={`http://localhost:3333/files/${index?.images[0].imageUrl}`}
                   className="Image_Obras"
                 />
                 ;

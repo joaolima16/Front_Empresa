@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import image from "../../assets/images/Obra.PNG";
 import ContentCard from "../CardObra/CardObra";
-import testeImage from "../../assets/images/obra3.PNG";
 import axios from "axios";
+
+
 export default function SectionObras() {
   const [Content, SetContent] = useState([]);
   const responsive = {

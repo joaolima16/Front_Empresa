@@ -3,7 +3,6 @@ import "./style.css";
 import image from "../../assets/images/Obra.PNG";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { Link, To, redirect } from "react-router-dom";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import logo from "../../assets/images/logo.png";
 import Footer from "../../Components/Footer";
 export default function ObrasPage() {
