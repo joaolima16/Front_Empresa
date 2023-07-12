@@ -11,7 +11,6 @@
 .Container_List{
     position: relative;
     top: 70px;
-    margin: 0 auto;
 }
 .Image_Obras{
     width: 330px;
@@ -25,7 +24,7 @@
 .Image_Obras:hover{
     cursor: pointer;
     transition: 1s;
-    width: 360px;
+    width: 345px;
     box-shadow:  6px 6px 8px 8px  #0000009f;
 }
 .Title_Header{

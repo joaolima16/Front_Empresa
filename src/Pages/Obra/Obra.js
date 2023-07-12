@@ -10,12 +10,11 @@ import axios from "axios";
 export default function ObrasPage() {
   const State = useSelector((state) => state?.sliceReducer.initialState);
   const [DataImage, SetDataImage] = useState([]);
-  console.log(State);
   const FecthData = () => {
     axios
       .get(
         `http://localhost:3333/obra/images/${
-          State[5] == "" ? State[5] : State?.id
+          State[5] !=undefined ? State[5] : State?.id
         }`
       )
       .then(({ data }) => {
@@ -42,27 +41,25 @@ export default function ObrasPage() {
       </Link>
       <section className="Container_Obra">
         <div className="Image_Obra">
-          <img
-            src={`http://localhost:3333/files/${
-              State[1] == "" ? State?.images[0].imageUrl : State[1]
-            }`}
-          />
+            <img
+            src={`http://localhost:3333/files/${State[1] != undefined? State[1] : State?.images[0]?.imageUrl}`}
+          /> 
         </div>
         <div className="Container_Informations">
-          <h2 className="Title_Obra">{State[0]}</h2>
+          <h2 className="Title_Obra">{State[0] != undefined? State[0] : State?.obra}</h2>
           <h3 className="Subtitle_Obra">
-            Contrato: n.{State[3] == "" ? State?.contrato : State[3]}
+            Contrato: n.{State[4] != undefined? State[3] : State?.contrato} 
           </h3>
           <p className="Content_Obra">
             <strong>Objeto Contratual:</strong>{" "}
-            {State[2] == "" ? State[2] : State?.obra}
+            {State[2] != undefined ? State[2] : State?.resumo}
           </p>
           <h3 className="Subtitle_Obra">
-            Contratante: {State[4] == "" ? State[4] : State?.contratante}
+            Contratante: {State[4] != undefined ? State[4] : State?.contratante}
           </h3>
           <h3 className="Subtitle_Obra">
             <strong>Situação:</strong>{" "}
-            {State[6] == "" ? State[6] : State?.status}
+            {State[6] != undefined ? State[6] : State?.status}
           </h3>
         </div>
       </section>
@@ -82,7 +79,6 @@ export default function ObrasPage() {
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   );

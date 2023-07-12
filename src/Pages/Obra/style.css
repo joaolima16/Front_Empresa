@@ -42,9 +42,10 @@
 .Title_Obra{
     text-align: center;
     font-size: 32px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     border-bottom: 2.5px solid #000;
-    font-weight: bold;
+    font-weight: 700;
+    padding: 5px;
 }
 .Container_Informations{
     padding: 10px;
@@ -96,5 +97,10 @@
     .Content_Obra{
         letter-spacing: 0.2px;
     }
-    
+    .ListImages{
+        margin: 0 auto;
+    }
+    .col{
+        margin: 0 auto;
+    }
 }

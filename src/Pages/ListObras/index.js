@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
-import teste from "../../assets/images/Obra.PNG";
-import teste2 from "../../assets/images/obra2.PNG";
-import teste3 from "../../assets/images/obra3.PNG";
 import "./style.css";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
@@ -11,6 +8,8 @@ import Footer from "../../Components/Footer/Footer";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { changeConstruction } from "../../Redux/Slice";
+
+
 
 export default function ListObrasPage() {
   const [Data, SetData] = useState([]);
@@ -26,14 +25,6 @@ export default function ListObrasPage() {
         console.log(err);
       });
   };
-  const itemData = [
-    { img: teste, title: "teste1" },
-    { img: teste2, title: "teste2" },
-    { img: teste3, title: "teste13" },
-    { img: teste3, title: "teste13" },
-    { img: teste3, title: "teste13" },
-    { img: teste3, title: "teste13" },
-  ];
 
   useEffect(() => {
     FecthDatas();
@@ -48,6 +39,7 @@ export default function ListObrasPage() {
         <h3 className="Title_Header">Portfólio de Obras</h3>
       </header>
       <section className="Container_List">
+
         <Carousel
           additionalTransfrom={0}
           arrows
