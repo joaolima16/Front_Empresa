@@ -8,23 +8,14 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.Container_List{
-    position: relative;
-    top: 70px;
-}
-.Image_Obras{
-    width: 330px;
-    height: auto;
-    position: relative;
-    left: 60px;
-}
+
+
 .Carrosel_Container{
     padding: 30px;
 }
 .Image_Obras:hover{
     cursor: pointer;
     transition: 1s;
-    width: 345px;
     box-shadow:  6px 6px 8px 8px  #0000009f;
 }
 .Title_Header{
@@ -49,4 +40,25 @@
         position: relative;
         left: 25px;
     }
+}
+.Image_Obras{
+    width: 600px;
+
+}
+.mySwiper{
+    width: 100%;
+    height: 100%;
+
+}
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper_container{
+    padding: 10px;
 }

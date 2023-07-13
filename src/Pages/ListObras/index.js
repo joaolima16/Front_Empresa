@@ -7,9 +7,15 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 import Footer from "../../Components/Footer/Footer";
 import axios from "axios";
 import { useDispatch } from "react-redux";
+import teste from "../../assets/images/deposito-de-agua.png";
 import { changeConstruction } from "../../Redux/Slice";
-
-
+import "swiper/css";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/effect-creative';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Navigation, EffectCreative, Keyboard} from "swiper/modules";
 
 export default function ListObrasPage() {
   const [Data, SetData] = useState([]);
@@ -38,9 +44,62 @@ export default function ListObrasPage() {
         </Link>
         <h3 className="Title_Header">Portfólio de Obras</h3>
       </header>
-      <section className="Container_List">
+      <section className="swiper_container">
+      <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          keyboard={{
+            enabled: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Keyboard, Pagination, Navigation]}
+          className="mySwiper"
+        // effect={'coverflow'}
+        // grabCursor={true}
+        // slidesPerView={'auto'}
+        // loop={true}
+        // centeredSlides={true}
+        // coverflowEffect={{
+        //   rotate:0,
+        //   stretch:0,
+        //   depth: 100,
+        //   modifier: 2.5
+        // }}
+        // modules={[EffectCoverflow, Pagination, Navigation]}
+        // pagination={{el:'Swiper_Pagination', clickable: true}}
+        // navigation={{
+        //   nextEl: ".Swiper_btn_next",
+        //   prevEl: ".Swiper_btn_preview",
+        //   clickable: true
+      >
+          {Data.map((index) => {
+            return (
+              <SwiperSlide className="swiper-slide">
+                <Link
+                  to="/obra"
+                  onClick={() => {
+                    dispatch(changeConstruction(index));
+                  }}
+                >
+                  <img
+                    src={`http://localhost:3333/files/${index?.images[0].imageUrl}`}
+                    className="Image_Obras"
+                  />
+                  
+                </Link>
+              </SwiperSlide>
+            );
+          })}
+          <div className="Swiper_Controller">
+          </div>
+          <div className="Swiper_Pagination">
 
-        <Carousel
+          </div>
+        </Swiper>
+        {/* <Carousel
           additionalTransfrom={0}
           arrows
           autoPlay
@@ -110,7 +169,7 @@ export default function ListObrasPage() {
               </Link>
             );
           })}
-        </Carousel>
+        </Carousel> */}
       </section>
       <Footer />
     </>

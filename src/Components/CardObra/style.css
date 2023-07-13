@@ -2,16 +2,12 @@
     border: 2px solid black;
     margin: 0 auto;
     border-radius: 5px;
-    max-height: 550px;
-    max-width: 400px;
-    background-color: rebeccapurple;
-    height: 450px;
-
+    height: auto;
 }
 
 .TitleCard{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'Ubuntu', sans-serif;
 }
 .link_page{
@@ -26,7 +22,4 @@
 .Images{
     width: 100%;
     max-height: 220px;
-}
-.teste{
-    padding: 15px;
 }

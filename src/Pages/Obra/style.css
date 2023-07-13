@@ -104,3 +104,8 @@
         margin: 0 auto;
     }
 }
+@media (max-width: 500px){
+    .Title_Obra{
+        font-size: 25px;
+    }
+}

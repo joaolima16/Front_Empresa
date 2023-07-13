@@ -31,7 +31,9 @@ export default function SectionObras() {
       .get(`http://localhost:3333/obra`)
       .then(({ data }) => {
         SetContent(data);
-        console.log(data);
+        
+        
+        
       })
       .catch((err) => {
         console.log(err);
@@ -49,21 +51,22 @@ export default function SectionObras() {
           Principais Obras
         </h1>
         <Carousel responsive={responsive}>
-          {Content.map(
-            ({ obra, resumo, images, contrato, contratante, id, status}) => {
-              return (
-                <ContentCard
-                  obra={obra}
-                  resumo={resumo}
-                  imagem={images[0]?.imageUrl}
-                  contrato={contrato}
-                  contratante={contratante}
-                  id={id}
-                  status={status}
-                />
-              );
-            }
-          )}
+       
+       {
+        Content.slice(0,5).map(({ obra, resumo, images, contrato, contratante, id, status})=>{
+          return(
+            <ContentCard
+                    obra={obra}
+                    resumo={resumo}
+                    imagem={images[0]?.imageUrl}
+                    contrato={contrato}
+                    contratante={contratante}
+                    id={id}
+                    status={status}
+                  />
+          );
+        })
+       }
         </Carousel>
       </div>
     </>

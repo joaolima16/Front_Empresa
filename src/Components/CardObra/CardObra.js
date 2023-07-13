@@ -31,10 +31,10 @@ export default function ContentCard({
     <>
 
 
-      <Card sx={{ maxWidth: 355, height: 480}} className="CardWrapper">
+      <Card sx={{ maxWidth: 355}} className="CardWrapper">
         <CardMedia
           component="img"
-          height="250px"
+          height="auto"
           image={`http://localhost:3333/files/${imagem}`}
         />
         <CardContent>
