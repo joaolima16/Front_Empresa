@@ -1,11 +1,20 @@
-import React from 'react'
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-export default function ButtonSwap() {
+import React from 'react';
+import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from 'react-icons/io5';
+import './style.css'
+
+export const NextBtn = ({ onClick }) => {
   return (
-   <>
-    <ArrowBackIcon />
-   <NavigateNextIcon />
-   </>
-  )
-}
+    <div className="icon Next" onClick={onClick}>
+      <IoArrowForwardCircleOutline className='icon' />
+    </div>
+  );
+};
+export const PrevBtn = ({ onClick }) => {
+  return (
+    <div onClick={onClick} className='icon Prev'>
+      <IoArrowBackCircleOutline className='icon' />
+    </div>
+  );
+};
+
+

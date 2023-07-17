@@ -10,11 +10,11 @@ export default function Footer() {
         <div className="iconContainer">
           <div className="icon_div">
             <AiFillPhone className="icon" />
-            <p className="icon_text">(11)9999-99</p>
+            <p className="icon_text">(11) 3054-9494</p>
           </div>
           <div className="icon_div">
             <MdOutlineEmail className="icon" />
-            <p className="icon_text">teste@outlook.com</p>
+            <p className="icon_text">kmg@kmg.eng.br</p>
           </div>
         </div>
       </section>

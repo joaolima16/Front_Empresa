@@ -23,8 +23,10 @@
     "react-router": "^6.12.1",
     "react-router-dom": "^6.13.0",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "reactstrap": "^9.1.10",
     "redux-thunk": "^2.4.2",
+    "slick-carousel": "^1.8.1",
     "swiper": "^10.0.4",
     "web-vitals": "^2.1.4",
     "webpack": "^5.88.1"
