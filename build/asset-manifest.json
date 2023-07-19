@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bae2bb12.css",
+    "main.js": "/static/js/main.1a5e814a.js",
+    "static/media/grey-geometrical-shapes-background.jpg": "/static/media/grey-geometrical-shapes-background.5290c2bb135916f66ffc.jpg",
+    "static/media/Imagem4.jpg": "/static/media/Imagem4.b7546a5d4aa82a714afd.jpg",
+    "static/media/5137894.jpg": "/static/media/5137894.b80505b76d4b50273a5f.jpg",
+    "static/media/fundo.jpeg": "/static/media/fundo.8ed7fc801bacfcf9cc34.jpeg",
+    "static/media/esgoto.png": "/static/media/esgoto.aca62dbfe1f88e41ca73.png",
+    "static/media/logo.png": "/static/media/logo.d0741f4cff7137bd7978.png",
+    "static/media/torneira.png": "/static/media/torneira.7763d5ba2128f119c49a.png",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/saneamento.png": "/static/media/saneamento.824b394c6080ae985b71.png",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.bae2bb12.css.map": "/static/css/main.bae2bb12.css.map",
+    "main.1a5e814a.js.map": "/static/js/main.1a5e814a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bae2bb12.css",
+    "static/js/main.1a5e814a.js"
+  ]
+}
