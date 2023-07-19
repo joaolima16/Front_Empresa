@@ -10,6 +10,7 @@ import axios from "axios";
 export default function ObrasPage() {
   const State = useSelector((state) => state?.sliceReducer.initialState);
   const [DataImage, SetDataImage] = useState([]);
+  const [CurrentImage, SetCurrentImage] = useState();
   const FecthData = () => {
     axios
       .get(
@@ -19,6 +20,7 @@ export default function ObrasPage() {
       )
       .then(({ data }) => {
         SetDataImage(data);
+        SetCurrentImage(data[0]?.imageUrl)
       })
       .catch((err) => {
         console.log(err);
@@ -26,6 +28,7 @@ export default function ObrasPage() {
   };
   useEffect(() => {
     FecthData();
+    console.log(CurrentImage)
   }, []);
 
   return (
@@ -43,9 +46,7 @@ export default function ObrasPage() {
       <section className="Container_Obra">
         <div className="Image_Obra">
           <img
-            src={`http://localhost:3333/files/${
-              State[1] != undefined ? State[1] : State?.images[0]?.imageUrl
-            }`}
+            src={`http://localhost:3333/files/${CurrentImage}`}
           />
         </div>
         <div className="Container_Informations">
@@ -53,7 +54,7 @@ export default function ObrasPage() {
             {State[0] != undefined ? State[0] : State?.obra}
           </h2>
           <h3 className="Subtitle_Obra">
-            Contrato: n.{State[4] != undefined ? State[3] : State?.contrato}
+            Contrato: n{State[4] != undefined ? State[3] : State?.contrato}
           </h3>
           <p className="Content_Obra">
             <strong>Objeto Contratual:</strong>{" "}
@@ -75,6 +76,7 @@ export default function ObrasPage() {
               {DataImage.map(({ imageUrl }) => {
                 return (
                   <img
+                  onClick={()=>{SetCurrentImage(imageUrl)}}
                     src={`http://localhost:3333/files/${imageUrl}`}
                     className="ListImages"
                   />

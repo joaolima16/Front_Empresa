@@ -88,6 +88,7 @@
     width: 350px;
     height:250px;
     padding: 15px;
+    cursor: pointer;
 }
 .col{
     padding: 10px;
