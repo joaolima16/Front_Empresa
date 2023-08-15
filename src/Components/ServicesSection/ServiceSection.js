@@ -14,26 +14,26 @@ export default function ServicesSection() {
         </h1>
         <section className="WrapperContent">
           <div className="WrapperIcons_main">
-            <img className="Image_Icons" src={icon1} />
+            <img className="Image_Icons" src={icon1} alt="Icone-Saneamento" />
             <p className="Content"> Obras de saneamento básico</p>
           </div>
           <div className="WrapperIcons_sub">
             <div className="WrapperIcons">
-              <img className="Image_Icons" src={icon4} />
+              <img className="Image_Icons" src={icon4} alt="Icone-Estação"/>
               <p className="Content">
                 Estações de tratamento de água, Adutoras, Estações Elevatórias ,
                 Boosters.
               </p>
             </div>
             <div className="WrapperIcons">
-              <img className="Image_Icons" src={icon2} />
+              <img className="Image_Icons" src={icon2} alt="Icone-Reservatório"/>
               <p className="Content">
                 Reservatórios elevados e Reservatórios apoiados, redes de
                 distribuição de água
               </p>
             </div>
             <div className="WrapperIcons">
-              <img className="Image_Icons" src={icon3} />
+              <img className="Image_Icons" src={icon3} alt="Icons"/>
               <p className="Content">
                 Estações de tratamento de esgoto, redes coletoras de esgoto,
                 Linhas de Recalque,

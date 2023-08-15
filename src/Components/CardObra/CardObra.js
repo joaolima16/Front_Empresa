@@ -33,6 +33,7 @@ export default function ContentCard({
           component="img"
           height="auto"
           image={`http://localhost:3333/files/${imagem}`}
+          alt={"obra"}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="section" className="TitleCard">

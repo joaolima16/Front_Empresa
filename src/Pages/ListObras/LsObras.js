@@ -81,6 +81,7 @@ export default function ListObrasPage() {
                   <img
                     className="Images_List"
                     src={`http://localhost:3333/files/${index?.images[0].imageUrl}`}
+                    alt={`${index?.obra}`}
                   />
                   </Link>
                 </div>

@@ -30,7 +30,7 @@ export default function About() {
             </p>
           </div>
           <div className="Logo">
-            <img src={logo} />
+            <img src={logo} alt="Logo" />
           </div>
         </section>
       </Slide>

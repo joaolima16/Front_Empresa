@@ -47,6 +47,7 @@ export default function ObrasPage() {
         <div className="Image_Obra">
           <img
             src={`http://localhost:3333/files/${CurrentImage}`}
+            alt={`Imagem Obra: ${State[0] != undefined ? State[0] : State?.obra}`}
           />
         </div>
         <div className="Container_Informations">
