@@ -27,16 +27,16 @@ header.Parallax.Header{
     display: flex;
     flex-direction: row;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     justify-content: end;
-    gap: 35px;
+    gap: 25px;
     align-items: flex-end;
     list-style: none;
     font-family: 'Ubuntu', sans-serif;
     font-size:25px;
     font-weight: 600;
     cursor: pointer;
-    bottom:60px;
+    bottom:90px;
     text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ header.Parallax.Header{
     top: 300px;
     gap: 10px;
 }
-.logo{
+.Logo_Header{
     width:120px;
     height: 120px;
 }
@@ -74,7 +74,7 @@ header.Parallax.Header{
     .NavList{
         font-size: 18px;
         justify-content: center;
-        bottom: 40px;
+        bottom: 100px;
         align-items: center;
     }
     .NavList a{

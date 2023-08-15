@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.Container_PageObra{
+    background-image: url("../../assets/images/grey-geometrical-shapes-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center center;
+    background-position: 50% 50%;
+
+}
 .Header_Obra{
     width: 100%;
     height: 70px;
@@ -8,6 +19,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .Content_Header{
     color: #fff;
     margin: 15px;
@@ -24,7 +36,7 @@
     margin: 15px;
     width: 50px;
     height: 50px;
-    color: #000;
+    color: #fffffff1;
 
 }
 .Container_Obra{
@@ -42,23 +54,25 @@
 .Title_Obra{
     text-align: center;
     font-size: 32px;
-    font-family: "Ubuntu", sans-serif;
-    border-bottom: 2.5px solid #000;
+    border-bottom: 3.5px solid #000;
     font-weight: 700;
     padding: 5px;
+    color: #f5f5f5;
 }
 .Container_Informations{
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-family: "Ubuntu", sans-serif;
+    color: #ffffffee;
+    font-family: 'Rubik', sans-serif;
 }
 .Content_Obra{
     font-size: 19px;
     letter-spacing: 1px;
     text-align: justify;
     font-weight: 400;
+    color: #f5f5f5;
 }
 .Subtitle_Obra{
     font-size: 24px;
@@ -74,6 +88,7 @@
     width: 350px;
     height:250px;
     padding: 15px;
+    cursor: pointer;
 }
 .col{
     padding: 10px;

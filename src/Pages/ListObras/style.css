@@ -1,9 +1,11 @@
-@import "~slick-carousel/slick/slick.css"; 
-@import "~slick-carousel/slick/slick-theme.css";
-
-
 .Container_List{
-    background-color: #2a2b2a;
+    background-image: url("../../assets/images/5137894.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center center;
+    background-position: 50% 50%;
+
 }
 .Header_obra{
     width: 100%;
@@ -15,7 +17,6 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 .Carrosel_Container{
     width: 100%;
@@ -41,15 +42,8 @@
     height: 50px;
 }
 
-@media(max-width:500px){
-    .Image_Obras{
-        margin: 0 auto;
-        position: relative;
-        left: 25px;
-    }
-}
 .slide img{
-    width: 30rem;
+    width: 25rem;
     margin: 0 auto;
     border: 10px;
 }
@@ -64,15 +58,18 @@
     opacity: 1;
     color: #0000009f;
 }
-.icon_route{
+.activeSlide img{
+    width: 30rem;
+}
+.Icon_route{
     position: absolute;
     width: 70px;
     color: #fff;
 }
-.icon svg{
+.Icon svg{
     transition: color 300ms;
 }
-.icon:hover{
+.Icon:hover{
     color: #f5f9f5;
 }
 .Next{
@@ -83,7 +80,25 @@
     left: 5%;
     top: 100%;
 }
-.Background{
-    position: relative;
 
+
+@media(max-width:700px){
+    .activeSlide img{
+        position: relative;
+        right: 10px;
+        width: 21rem;
+    }
+    .slide img{
+        width: 14rem;
+    }
+}
+@media (max-width:500px){
+    .activeSlide img{
+        position: relative;
+        right: 10px;
+        width: 15rem;
+    }
+    .slide img{
+        width: 10rem;
+    }
 }

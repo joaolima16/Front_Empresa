@@ -30,10 +30,7 @@ export default function SectionObras() {
     await axios
       .get(`http://localhost:3333/obra`)
       .then(({ data }) => {
-        SetContent(data);
-        
-        
-        
+        SetContent(data);    
       })
       .catch((err) => {
         console.log(err);
@@ -45,7 +42,7 @@ export default function SectionObras() {
   }, []);
   return (
     <>
-      <section className="parallax"> </section>
+      <section className="Parallax"> </section>
       <div className="Container">
         <h1 className="TitleObra" id="obras">
           Principais Obras

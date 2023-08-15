@@ -8,7 +8,6 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import "./style.css";
-import teste from '../../assets/images/Obra.PNG'
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { changeConstruction } from "../../Redux/Slice";
@@ -29,8 +28,6 @@ export default function ContentCard({
 
   return (
     <>
-
-
       <Card sx={{ maxWidth: 355}} className="CardWrapper">
         <CardMedia
           component="img"
@@ -41,11 +38,11 @@ export default function ContentCard({
           <Typography gutterBottom variant="h5" component="section" className="TitleCard">
             {obra}
           </Typography>
-          <Typography variant="body2" className="ContentCard" >
+          <Typography variant="body2" className="ContentCard"  >
             {resumo}
           </Typography>
         </CardContent>
-        <CardActions className="teste">
+        <CardActions>
           <Button size="small" onClick={()=> Toggle()}><Link to="/obra" className="link_page">Detalhes</Link></Button>
           <Button size="small"><Link to="/obras" className="link_page">Mais obras</Link></Button>
         </CardActions>

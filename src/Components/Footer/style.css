@@ -4,44 +4,43 @@
     background: linear-gradient(90deg, rgba(28,27,29,1) 0%, rgba(13,13,14,1) 100%, rgba(205,212,213,1) 100%);
     width: 100%;
     height: 50vh;
-    padding: 60px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 80px;
     font-family: "Roboto", sans-serif;
-    top: 170px;
+    top: 210px;
 }
-.mapa{
+.Mapa{
  width:500px;
  height: 200px;   
 }
-.icon{
+.Icon{
     width: 50px;
     height: 50px;
 }
-.titleIcons{
+.TitleIcons{
     color: #fff;
     font-size: 32px;
     text-align: center;
     padding: 5px;
 }
-.section-icons{
+.Section-icons{
     padding: 15px;
 }
-.iconContainer{
+.IconContainer{
     display: flex;
     flex-direction: row;
     gap: 30px;
     text-align: center;
 }
-.icon_text{
+.Icon_text{
     text-align: center;
     color: #fff;
 }
 @media(max-width:750px){
-    .mapa{
+    .Mapa{
         width: 280px;
         height: 200px;
     }
@@ -53,7 +52,7 @@
     }
 }
 @media(max-width:400px){
-    .mapa{
+    .Mapa{
         width: 100%;
         height: 120px;
     }

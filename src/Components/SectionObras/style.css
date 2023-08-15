@@ -1,4 +1,4 @@
-.parallax{
+.Parallax{
     position: relative;
     background-image: url("../../assets/images/Imagem4.jpg");
     background-repeat: no-repeat;
@@ -9,10 +9,9 @@
     background-position: center center;
     background-position: 50% 50%;
     padding: 40px;
-    top: 20px;
     color: #000;
 }
-.parallax::after{
+.Parallax::after{
         content: "";
         height: 100%;
         width: 100%;

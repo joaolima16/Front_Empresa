@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className=" Parallax Header">
       <section className="SectionTitle">
-        <img className="logo" src={image} />
+        <img className="Logo_Header" src={image} />
         <h1 className="Title">CONSTRUTORA LTDA </h1>
       </section>
 
